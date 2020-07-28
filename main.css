@@ -93,7 +93,7 @@ li.active {
 .about-us {
   padding: 2rem 0;
   position: relative;
-  background: url("/images/about-us-bg.png") no-repeat center center;
+  background: url("images/about-us-bg.png") no-repeat center center;
   background-size: cover;
   z-index: 1;
 }
