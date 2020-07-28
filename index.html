@@ -12,8 +12,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
 
     <link
       href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
@@ -39,7 +44,6 @@
         </div>
 
           <div class="showcase__content">
-            <div class="container">
               <nav class="z-depth-0 transparent">
                 <div class="nav-wrapper" style="padding: 0 1rem;">
                   <a href="#" class="brand-logo">
@@ -49,6 +53,7 @@
                       class="showcase__logo"
                     />
                   </a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                   <ul class="right hide-on-med-and-down">
                     <li class="active"><a href="/">Home</a></li>
                     <li><a href="#">Fleet</a></li>
@@ -57,15 +62,17 @@
                     <li><a href="#">Francais</a></li>
                   </ul>
 
-                  <ul class="sidenav" id="mobile-demo">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
-                  </ul>
-                </div>
               </nav>
-            </div>
+
+              <ul class="sidenav" id="mobile-demo">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="#">Fleet</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Francais</a></li>
+
+                <li class="nav-list__footer center-align grey darken-3"><img src="images/logo.svg" width="100"></li>
+              </ul>
+          </div>
             <div class="container">
               <div class="row" style="position: absolute; top: 50%; transform: translateY(-50%);">
                 <div class="col s12 m8 l7">
@@ -206,15 +213,19 @@
 
     <section class="about-us">
       <div class="container">
-        <div class="row">
-          <div class="col s12 m12 l10">
+        <div class="row flex">
+          <div class="col s12 m12 l6 yellow darken-4 center-align">
             <h3 class="white-text">About Promar Shipping<br />Services</h3>
-            <p class="white-text">
+           
+          </div>
+
+          <div class="col s12 m12 l6" style="padding: 2rem; outline: 5px dashed orange">
+            <p>
               Promar Shipping Services SA was incorporated in 2002 with head
               office in Geneva as an independent organization specialising in
               ship operations.
             </p>
-            <p class="white-text">
+            <p>
               Based on experiences with vessels chartering and the maintenance
               business in the oil industry, Promar Shipping Services SA
               naturally headed for managing offshore vessels, practising the
@@ -222,12 +233,12 @@
               mind the particular expectations and needs of the offshore oil and
               gas industry.
             </p>
-            <p class="white-text">
+            <p>
               Thanks to a knowledgeable staff with broad expertise in the
               management of offshore vessels, Promar Shipping Services SA
               ensures the supervision of the fleet.
             </p>
-            <p class="white-text">
+            <p>
               The fully dedicated and qualified personnel cover all the various
               competencies of the Ship Management business. All the services
               provided including QHSE, chartering, operations, crewing,
@@ -245,63 +256,54 @@
       <div class="container">
         <h3 class="center-align">Our Affiliation</h3>
 
+
         <div class="row">
           <div class="col s12 m6 l4">
-            <div class="card hoverable small">
+            <div class="card small">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/imca.jpg">
+              </div>
               <div class="card-content">
-                <span
-                  class="card-title center-align"
-                  style="padding-bottom: 2rem;"
-                >
-                  <img
-                    src="images/imca.jpg"
-                    width="200"
-                  />
-                </span>
-                <p class="center-align">
-                  Promar Shipping Services SA<br/>
-                  is member of IMCA.
-                </p>
+                
+                <p class="center-align">Promar Shipping Services SA<br />
+                  is member of IMCA.</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">IMCA<i class="material-icons right">close</i></span>
+                <p>International Marine Contractors Association is a leading international trade association for the marine contracting industry. It is a not for profit organisation with members representing the majority of worldwide marine contractors in the oil and gas and renewable energy industries.</p>
               </div>
             </div>
           </div>
 
           <div class="col s12 m6 l4">
-            <div class="card hoverable small">
+            <div class="card small">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/veritas.jpg">
+              </div>
               <div class="card-content">
-                <span
-                  class="card-title center-align"
-                  style="padding-bottom: 2rem;"
-                >
-                  <img
-                    src="images/veritas.jpg"
-                    width="200"
-                    class="yellow-text text-darken-4"
-                  />
-                </span>
-                <p class="center-align">
-                  The ISM and the ISPS certificates<br />are awarded by BV.
-                </p>
+                
+                <p class="center-align">The ISM and the ISPS certificates<br/>
+                  are awarded by BV. </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Bureau Veritas<i class="material-icons right">close</i></span>
+                <p>Bureau Veritas is a company specialized in testing, inspection and certification founded in 1828. It operates in a variety of sectors, including Building & Infrastructure, Agri-food & Commodities, Marine & Offshore, Industry, Certification and Consumer Products.</p>
               </div>
             </div>
           </div>
 
-          <div class="col s12 m6 offset-m3 l4">
-            <div class="card hoverable small">
+          <div class="col s12 m6 l4">
+            <div class="card small">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/bimco.jpg">
+              </div>
               <div class="card-content">
-                <span
-                  class="card-title center-align"
-                  style="padding-bottom: 2rem;"
-                >
-                  <img
-                    src="images/bimco.jpg"
-                    width="200"
-                    class="yellow-text text-darken-4"
-                  />
-                </span>
-                <p class="center-align">
-                  Promar Shipping Services SA<br />is member of BIMCO.
-                </p>
+                
+                <p class="center-align">Promar Shipping Services SA<br />is member of BIMCO.</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">BIMCO<i class="material-icons right">close</i></span>
+                <p>BIMCO is the largest of the international shipping associations representing shipowners; its membership controls around 65 percent of the world’s tonnage and it has members in more than 120 countries, including managers, brokers and agents.</p>
               </div>
             </div>
           </div>
@@ -334,12 +336,7 @@
             
             <div class="row qhse__p">
               <div class="col s2 m2 l2 center-align">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 571.72 571.72" width="30" height="30">
-                      <g>
-                        <circle class="correct__circle" cx="285.86" cy="285.86" r="265.86" />
-                        <polyline class="correct__check" points="133.94 333.08 226.1 404.66 437.78 167.06"/>
-                      </g>
-                </svg>
+                <img src="images/correct.svg" width="30">
                 
               </div>
               <div class="col s10 m10 l10">
@@ -530,11 +527,7 @@
 
     </footer>
 
-    <script>
+  <script src="main.js"></script>
 
-var path = document.querySelector('.correct__circle');
-var length = path.getTotalLength();
-console.log(length);
-      </script>
   </body>
 </html>

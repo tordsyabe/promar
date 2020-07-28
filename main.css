@@ -31,6 +31,10 @@ h3 {
   z-index: 10;
 }
 
+.showcase__content h2 {
+  z-index: 50;
+}
+
 .showcase__video-container {
   position: absolute;
   top: 0;
@@ -68,11 +72,6 @@ h3 {
   width: 150px;
 }
 
-li.active {
-  border-bottom: 5px solid var(--primary-color);
-  background-color: transparent !important;
-}
-
 .our-service {
   position: relative;
   padding-top: 2rem;
@@ -90,29 +89,26 @@ li.active {
   z-index: -2;
 }
 
+li.active {
+  border-bottom: 5px solid var(--primary-color);
+  background-color: transparent !important;
+}
+
 .about-us {
   padding: 2rem 0;
   position: relative;
-  background: url("images/about-us-bg.png") no-repeat center center;
   background-size: cover;
   z-index: 1;
 }
 
-.about-us::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.about-us h3 {
+  padding-top: 20%;
+}
 
-  background: rgb(245, 127, 23);
-  background: linear-gradient(
-    90deg,
-    rgba(245, 127, 23, 1) 0%,
-    rgba(245, 127, 23, 0.8) 100%
-  );
-  z-index: -1;
+.about-us__p {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  border-radius: 5px;
 }
 
 .our-affiliation {
@@ -180,4 +176,23 @@ li.active {
   to {
     stroke-dashoffset: 0;
   }
+}
+
+.nav-list__footer {
+  padding: 0.6rem;
+  background: grey;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav li:nth-last-child(2) {
+  flex-grow: 1;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }
