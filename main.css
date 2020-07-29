@@ -199,28 +199,34 @@ li.active {
 
 /* label color */
 .input-field label {
-  color: var(--primary-color);
+  color: #616161 !important;
 }
 /* label focus color */
-.input-field input[type="text"]:focus + label {
-  color: var(--primary-color);
+.input-field input[type="text"]:focus + label,
+.input-field input[type="email"]:focus + label,
+.input-field textarea:focus + label {
+  color: var(--primary-color) !important;
 }
 /* label underline focus color */
-.input-field input[type="text"]:focus {
-  border-bottom: 1px solid var(--primary-color);
-  box-shadow: 0 1px 0 0 var(--primary-color);
+.input-field input[type="text"]:focus,
+.input-field input[type="email"]:focus,
+.input-field textarea:focus {
+  border-bottom: 1px solid var(--primary-color) !important;
+  box-shadow: 0 1px 0 0 var(--primary-color) !important;
 }
 /* valid color */
-.input-field input[type="text"].valid {
-  border-bottom: 1px solid var(--primary-color);
-  box-shadow: 0 1px 0 0 var(--primary-color);
+.input-field input[type="text"].valid,
+.input-field input[type="email"].valid {
+  border-bottom: 1px solid var(--primary-color) !important;
+  box-shadow: 0 1px 0 0 var(--primary-color) !important;
 }
 /* invalid color */
-.input-field input[type="text"].invalid {
-  border-bottom: 1px solid var(--primary-color);
-  box-shadow: 0 1px 0 0 var(--primary-color);
+.input-field input[type="text"].invalid,
+.input-field input[type="email"].invalid {
+  border-bottom: 1px solid var(--primary-color) !important;
+  box-shadow: 0 1px 0 0 var(--primary-color) !important;
 }
 /* icon prefix focus color */
 .input-field .prefix.active {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
