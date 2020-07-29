@@ -79,7 +79,7 @@ h3 {
 .our-service {
   position: relative;
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .our-service::after {
@@ -115,28 +115,20 @@ li.active {
   border-radius: 5px;
 }
 
-.about-us .about-us__cover {
-  background: url("images/about-us-bg.jpg") no-repeat center center;
-  background-size: cover;
-  position: relative;
-  z-index: -1;
-}
-
-.about-us__overlay {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.about-us__cover img {
+  object-fit: fill;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: -1;
+}
+
+.about-us__cover {
+  padding: 0 !important;
 }
 
 .our-affiliation {
   position: relative;
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .qhse {
