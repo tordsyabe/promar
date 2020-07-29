@@ -99,14 +99,14 @@ li.active {
 }
 
 .about-us {
-  padding: 2rem 0;
   position: relative;
   background-size: cover;
   z-index: 1;
 }
 
 .about-us h3 {
-  padding-top: 20%;
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 .about-us__p {
@@ -142,7 +142,7 @@ li.active {
 .qhse {
   position: relative;
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .qhse::after {
@@ -298,4 +298,17 @@ textarea {
   40% {
     transform: rotate(-45deg) translate(0, 0);
   }
+}
+
+.footer-copyright a {
+  padding-left: 2rem;
+}
+
+.footer__page-links li {
+  transition: all 500ms;
+}
+
+.footer__page-links li:hover {
+  padding-left: 1rem;
+  text-decoration: underline;
 }
