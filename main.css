@@ -230,3 +230,9 @@ li.active {
 .input-field .prefix.active {
   color: var(--primary-color) !important;
 }
+
+input,
+select,
+textarea {
+  color: grey;
+}
