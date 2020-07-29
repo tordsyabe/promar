@@ -76,6 +76,10 @@ h3 {
   width: 150px;
 }
 
+.showcase__content + h2 {
+  margin-bottom: 2rem !important;
+}
+
 .our-service {
   position: relative;
   padding-top: 2rem;
@@ -256,7 +260,7 @@ textarea {
 }
 .scrolldown span {
   position: absolute;
-  bottom: -50%;
+  bottom: -40%;
   left: 50%;
   width: 40px;
   height: 40px;
