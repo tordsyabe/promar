@@ -118,6 +118,7 @@ li.active {
   position: relative;
   background-size: cover;
   z-index: 1;
+  padding-top: 2rem;
 }
 
 .about-us h3 {
