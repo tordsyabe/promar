@@ -321,3 +321,36 @@ textarea {
   padding-left: 1rem;
   text-decoration: underline;
 }
+
+.fleets-slides,
+.fleets-slides__psv,
+.fleets-slides__fcb {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.fleets-slides .card,
+.fleets-slides__psv .card,
+.fleets-slides__fcb .card {
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+}
+
+.fleets-slides .card .slick-next::before, .slick-prev::before,
+.fleets-slides__psv .card .slick-next::before, .slick-prev::before,
+.fleets-slides__fcb .card .slick-next::before, .slick-prev::before
+ {
+    color: var(--primary-color);
+}
+
+.slick-slide {
+  opacity: .5;
+  outline: none;
+}
+
+
+.slick-center {
+  display: block;
+  opacity: 1;
+
+}
